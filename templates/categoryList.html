@@ -1,0 +1,47 @@
+    <!-- 
+      Con ng-controller, le indicamos cuál controlador tendremos en el div. Pasándol el nombre del controlador, definido, en este caso, en category-ctrl.js
+    -->
+<div ng-controller="CategoryCtrl">
+	<div class="row">
+
+	</div>
+	
+	<div class="panel panel-default">
+	 	<!-- Default panel contents -->
+	  	<div class="panel-heading">{{tittle}}</div>
+	  	<div class="panel-body">
+
+			<div class="row">
+				<div class="col-md-2 col-md-offset-2 col-xs-2 col-xs-offset-2">
+					<img width="100px" height="auto" src="img/sports.png" ng-click="gotoDetailQuestion(1)">
+				</div>
+
+				<div class="col-md-2 col-md-offset-2 col-xs-2 col-xs-offset-2">
+					<img width="100px" height="auto" src="img/art.png" ng-click="gotoDetailQuestion(2)">
+				
+				</div>
+
+				<!--<table class="table col-md-12" >
+					<tbody>
+						<tr ng-repeat="category in categories">
+							<th scope="row" >
+								<img src={{category.image}} alt={{category.name}}>
+							</th>
+						</tr>
+					</tbody>
+				</table>-->
+
+			</div>
+			<div class="row">
+				<div class="col-xs-2 col-xs-offset-2 col-md-2 col-md-offset-2">
+					<img class="img-responsive" width="100px" height="auto" src="img/science.png" ng-click="gotoDetailQuestion(3)">
+				</div>
+				
+				<div class="col-xs-2 col-xs-offset-2 col-md-2 col-md-offset-2">
+					<img class="img-responsive" width="100px" height="auto" src="img/geography.png" ng-click="gotoDetailQuestion(4)">
+				
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
