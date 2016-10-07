@@ -4,6 +4,17 @@
 			<span class="label label-success">{{score}}</span>
 		</div>
 	</div>
+	<div ng-if="correctAnswer" class="alert alert-warning alert-dismissible" role="alert">
+	  	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	  	<strong>Felicidades!</strong> Respuesta correcta.
+	</div>
+	<div ng-if="uncorrectAnswer" class="alert alert-warning alert-dismissible" role="alert">
+	  	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	  	<strong>Fallaste!</strong> Tu respuesta es incorrecta.
+	</div>
+	<div ng-if="showMessage" class="alert alert-warning alert-dismissible" role="alert">
+	  	<strong>Error!</strong> {{message}}
+	</div>
 	<div class="row">
 		<div class="col-xs-2 col-xs-offset-5 col-md-2 col-md-offset-5 text-center">
 			<img class="img-responsive" width="100px" height="auto" src="{{question.image}}">
